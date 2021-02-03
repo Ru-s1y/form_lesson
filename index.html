@@ -10,6 +10,94 @@
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
-
+    <section class="wrapper">
+      <div class="inner m-center cb-r">
+        <div class="main-content cb-b">
+          <h1 class="t-center form-title">アカウント作成</h1>
+          <div class="header-button d-flex">
+            <div class="button-box t-center cb-r">
+              <a class="button fb-button" href="#">Facebookでスタート</a>
+            </div>
+            <div class="button-box t-center">
+              <a class="button ggl-button" href="#">Googleでスタート</a>
+            </div>
+          </div>
+          <p class="supplement-text t-center">タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
+          <div class="devider t-center">
+            <p class="label-text">アカウント情報</p>
+          </div>
+          <form action="#" class="form m-center cb-b" method="post">
+            <div class="content form-name d-flex">
+              <div class="form-name">
+                <p class="label-text">名字<span class="required">※</span></p>
+                <input type="text">
+              </div>
+              <div class="form-name">
+                <p class="label-text">名前<span class="required">※</span></p>
+                <input type="text">
+              </div>
+            </div>
+            <div class="content">
+              <p class="label-text">性別</p>
+              <input type="radio" name="gender" class="form-gender" value="male">男
+              <input type="radio" name="gender" class="form-gender" value="female">女
+              <input type="radio" name="gender" class="form-gender" value="other">その他
+            </div>
+            <div class="content">
+              <select name="birthplace">
+                <option value="tokyo">東京</option>
+                <option value="chiba">千葉</option>
+                <option value="saitama">埼玉</option>
+                <option value="kanagawa">神奈川</option>
+              </select>
+            </div>
+            <div class="content">
+              <p class="label-text">Eメール<span class="required">※</span></p>
+              <input type="email" class="form-email">
+            </div>
+            <div class="content">
+              <p class="label-text">電話番号</p>
+              <input type="text" class="form-phonenumber">
+            </div>
+            <div class="content">
+              <p class="label-text">パスワード<span class="required">※</span></p>
+              <input type="password" class="form-pass">
+            </div>
+            <div class="content">
+              <p class="label-text">パスワード(確認用)<span class="required">※</span></p>
+              <input type="password" class="form-passconf">
+            </div>
+            <div class="content form-course">
+              <p class="label-text">希望コース</p>
+              <p>
+                <input type="checkbox">フロントエンド 
+              </p>
+              <p>
+                <input type="checkbox">バックエンド
+              </p>
+              <p>
+                <input type="checkbox">アプリ
+              </p>
+            </div>
+            <div class="content">
+              <p  class="label-text">備考</p>
+              <textarea name="remarks" class="form-remarks" rows="5" cors="40"></textarea>
+            </div>
+            <div class="content">
+              <input type="submit" class="form-submit" value="アカウント作成">
+            </div>
+            <div class="content">
+              <p class="supplement-text">
+                アカウントを作成することにより、<a href="#">利用規約</a>と<a href="#">プライバシーポリシー</a>に同意するものとします。
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="t-center under-text">
+        <p>すでにアカウントをお持ちですか？<a href="#">ログイン</a></p>
+        <a href="#">認証メールが届きませんか？</a>
+      </div>
+    </section>
   </body>
 </html>
