@@ -63,6 +63,9 @@
                 >
               </div>
             </div>
+            <!-- type="text"で標準的な入力欄を表示する -->
+            <!-- name属性をつけるとvalueと一組になって送信される -->
+
             <!-- 性別 -->
             <div class="row gender">
               <p class="label-text is-fullWidth">性別</p>
@@ -81,6 +84,9 @@
                 </label>
               </div>
             </div>
+            <!-- name属性を一致させることで、一つしか選べないようにしている。 -->
+            <!-- checkedをつけるとあらかじめチェックした状態になる。 -->
+
             <!-- 出身   -->
             <div class="row origin is-halfWidth">
               <p class="label-text">出身</p>
@@ -97,6 +103,8 @@
                 </select>
               </div>
             </div>
+            <!-- select > option でプルダウンメニューで選択できる -->
+
             <!-- Email -->
             <div class="row email">
               <p class="label-text">
@@ -111,16 +119,23 @@
                 required
               >
             </div>
+            <!-- type="email"で簡単なバリデーションをつける(@を含むか) -->
+            <!-- ※メールアドレス以外でも入力できるので過信しない。 -->
+            <!-- requiredをつけると必須項目になる -->
+
             <!-- 電話番号 -->
             <div class="row tel">
               <p class="label-text">電話番号</p>
               <input 
-                type="text" 
+                type="tel" 
                 class="input-init input-area is-fullWidth"
                 name="tel"
                 placeholder="ex) 09012345678"
               >
             </div>
+            <!-- type="tel"を指定しても入力形式が強制されていないためtextと同じような動作になる。 -->
+            <!-- バリデーションをつけたいならJavaScript等でやる -->
+
             <!-- パスワード -->
             <div class="row password">
               <p class="label-text">
@@ -146,6 +161,9 @@
                 required
               >
             </div>
+            <!-- type="password"をつけると、入力された値が伏字になる。 -->
+            <!-- ※暗号化されているわけではないため注意 -->
+
             <!-- 複数チェック -->
             <div class="row course">
               <p class="label-text">希望コース</p>
@@ -162,6 +180,8 @@
                 <label for="app" class="course-option-text">アプリ</label>
               </div>
             </div>
+            
+
             <!-- 備考 -->
             <div class="row remarks">
               <p class="label-text">備考</p>
@@ -171,6 +191,9 @@
                 placeholder="何かあればご記入ください"
               ></textarea>
             </div>
+            <!-- placeholder属性をつけると入力欄の初期値として表示される -->
+            <!-- ユーザーにヒントを与える時に使用する -->
+
             <!-- 送信ボタン -->
             <div class="row">
               <input
@@ -179,39 +202,13 @@
                 class="input-init button submit-btn is-fullWidth"
               >
             </div>
+            <!-- submitを指定するとフォームの送信ボタンを作成する -->
+            <!-- ボタン内のテキストはvalueで指定 -->
+            <!-- name属性をつけるとvalueと一組になって送信される -->
 
             <p class="agreement">
               アカウントを作成することにより、<a href="#" class="link-color">利用規約</a>と<a href="#" class="link-color">プライバシーポリシー</a>に同意するものとします。
             </p>
-
-            <!-- 試験場 -->
-            <!-- 
-              <div class="test-text">
-                <p>こんにちは</p>
-                <p>
-                  こ
-                  ん
-                  に
-                  ち
-                  は
-                </p>
-                <p>
-                  <span>こ</span><span>ん</span><span>に</span>
-                  <span>ち</span>
-                  <span>は</span>
-                </p>
-                <p>
-                  <span>
-                    こ
-                    ん
-                    に
-                    ち
-                    は
-                  </span>
-                </p>
-              </div> 
-            -->
-            <!-- 試験場ここまで -->
 
           </form>
         </div>
@@ -219,9 +216,9 @@
         <div class="foot-part">
           <p>
             すでにアカウントをお持ちですか？ 
-            <a href class="link-color">ログイン</a>
+            <a href="#" class="link-color">ログイン</a>
           </p>
-          <a href class="link-color resend-mail">認証メールが届きませんか？</a>
+          <a href="#" class="link-color resend-mail">認証メールが届きませんか？</a>
         </div>
 
       </div>

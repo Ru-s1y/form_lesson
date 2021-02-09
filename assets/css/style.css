@@ -363,30 +363,3 @@
 }
 
 /* ここまで */
-
-
-
-/* ----- 試験場 ----- */
-/*
-  :root {
-    --field-height: 300px;
-    --field-width: 300px;
-  }
-
-  .test-text{
-    font-size: 0;
-    border: dotted black;
-    padding: 10px;
-
-  }
-
-  .test-text p{
-    font-size: 12px;
-  }
-
-  .test-text p span {
-    line-height: 160%;
-    border: solid 1px blue;
-  }
-*/
-/* ----- 試験場ここまで ----- */
